@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+
+{% extends "basic_app/base.html" %}
+{% load static %}
+{% load my_extras %}
+  {% block body_block %}
+  <div class="jumbtron">
+    <h1>Welcome to Index </h1>
+    <h2>templateinheritance</h2>
+
+    {{ text|cuti:"hello"}}
+    {{ number|add:"99" }}
+  </div>
+    {% endblock %}
